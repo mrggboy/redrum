@@ -1,0 +1,342 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JSON | Redrum</title>
+<meta name="description" content="菜就多练" />
+<link rel="shortcut icon" href="https://redrum.github.io/favicon.ico">
+<link rel="stylesheet" href="https://redrum.github.io/styles/main.css">
+
+<script src="https://redrum.github.io/media/js/jquery.min.js"></script>
+<script src="https://redrum.github.io/media/js/masonry.pkgd.min.js"></script>
+<script src="https://redrum.github.io/media/js/aos.js"></script>
+<script src="https://redrum.github.io/media/js/pace.min.js"></script>
+<script src="https://redrum.github.io/media/js/view-image.min.js"></script>
+<script src="https://redrum.github.io/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://redrum.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="0.JSON概述
+0.1什么是JSON
+JSON：JavaScript Object Notation 【JavaScript 对象表示法】
+JSON 是存储和交换文本信息的语法。类似 XML。
+JSON采用完全独立于任何程序语言的文本格式..." />
+    <meta name="keywords" content="" />
+    <script src="https://redrum.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://redrum.github.io/media/js/prism.min.js"></script>
+  </head>
+  <body>
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://redrum.github.io"><img src="\media\images\custom-headerLogo.png" alt=""></a>
+            </div>
+            <!-- start: .main-nav -->
+
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                <li class=""><a href="https://redrum.github.io" class="menu">首页</a></li>
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
+              </ul>
+            </nav>
+            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
+        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
+          <div class="search-wrapper section">
+            <form id="gridea-search-form" data-update="1706061688140" action="/search/index.html" class="search-form" _lpchecked="1">
+              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
+              <button type="submit" class="submit" aria-label="Submit">
+                <i class="fa fa-search-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://redrum.github.io/post-images/json.png');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2024-01-23"><i class="fa fa-calendar"></i><span class="lately">19 小时前</span></time>
+              
+              <a href="https://redrum.github.io/post/json/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/json/"> </span>
+              </a>
+              <span id="/json/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+              </div>
+              <h1 class="title ularge white bold">JSON</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <h1 id="0json概述">0.JSON概述</h1>
+<h2 id="01什么是json">0.1什么是JSON</h2>
+<p>JSON：JavaScript Object Notation 【JavaScript 对象表示法】</p>
+<p>JSON 是存储和交换文本信息的语法。类似 XML。</p>
+<p>JSON采用完全独立于任何程序语言的文本格式，使JSON成为理想的数据交换语言S</p>
+<h2 id="02为什么需要json">0.2为什么需要JSON</h2>
+<p>提到JSON，我们就应该和XML来进行对比。XML也是一种存储和交换文本信息的手段。那么JSON好在哪里呢？？</p>
+<p>JSON 比 XML 更小、更快，更易解析。</p>
+<p>javaScript原生支持JSON，解析速度会很快<br>
+XML解析成DOM对象的时候，浏览器【IE和fireFox】会有差异<br>
+使用JSON会更简单</p>
+<h1 id="1json语法">1.JSON语法</h1>
+<p>客户端与服务端的交互数据无非就是两种</p>
+<ul>
+<li>数组</li>
+<li>对象</li>
+</ul>
+<p>于是乎，JSON所表示的数据要么就是对象，要么就是数据</p>
+<p>JSON语法是javaScript语法的子集，javaScript用[]中括号来表示数组，用{}大括号来表示对象，JSON亦是如此</p>
+<h2 id="11json数组">1.1JSON数组</h2>
+<blockquote>
+<p>var employees = [<br>
+{ &quot;firstName&quot;:&quot;Bill&quot; , &quot;lastName&quot;:&quot;Gates&quot; },<br>
+{ &quot;firstName&quot;:&quot;George&quot; , &quot;lastName&quot;:&quot;Bush&quot; },<br>
+{ &quot;firstName&quot;:&quot;Thomas&quot; , &quot;lastName&quot;: &quot;Carter&quot; }<br>
+];</p>
+</blockquote>
+<h2 id="12json对象">1.2JSON对象</h2>
+<blockquote>
+<p>var obj = {<br>
+age: 20,<br>
+str: &quot;zhongfucheng&quot;,<br>
+method: function () {<br>
+alert(&quot;我爱学习&quot;);<br>
+}<br>
+};</p>
+</blockquote>
+<h2 id="13解析json">1.3解析JSON</h2>
+<p>javaScript原生支持JSON的，我们可以使用eval()函数来解析JSON，把JSON文本数据转换成一个JavaScript对象。</p>
+<blockquote>
+<p>function test() {<br>
+//在写JOSN的时候，记得把带上逗号<br>
+var txt = &quot;{a:123,&quot; +<br>
+&quot;b:'zhongfucheng'}&quot;;<br>
+//使用eval解析JSON字符串，需要增添()<br>
+var aa = eval(&quot;(&quot; + txt + &quot;)&quot;);<br>
+alert(aa);<br>
+}<br>
+效果：<img src="https://redrum.github.io/post-images/1705994704249.png" alt="" loading="lazy"></p>
+</blockquote>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://redrum.github.io/post-images/postman.jpeg');"></div>
+                 <a href="https://redrum.github.io/post/postman/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2024-01-19">2024-01-19</time>
+                  <h4 class="title white no-margin">Postman</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://redrum.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+              </div>
+              <div class="clear"></div>
+            
+
+            </div>
+          </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://redrum.github.io/post/json/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://redrum.github.io/post-images/json.png');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2024-01-23">2024-01-23</time>
+                      <h4 class="title usmall">
+                        <a href="https://redrum.github.io/post/json/">JSON</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://redrum.github.io/post/postman/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://redrum.github.io/post-images/postman.jpeg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2024-01-19">2024-01-19</time>
+                      <h4 class="title usmall">
+                        <a href="https://redrum.github.io/post/postman/">Postman</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://redrum.github.io/post/servlet/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://redrum.github.io/post-images/servlet.png');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2024-01-18">2024-01-18</time>
+                      <h4 class="title usmall">
+                        <a href="https://redrum.github.io/post/servlet/">Servlet</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://redrum.github.io/tag/WhKNgZ_FS/" class="ctag ctag-0 ctag-WhKNgZ_FS" aria-label="">study</a>
+                    
+                      <a href="https://redrum.github.io/tag/0c-nXbqnA/" class="ctag ctag-1 ctag-0c-nXbqnA" aria-label="">Gridea</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://redrum.github.io/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Redrum</a></h4>
+                    <p class="founder">菜就多练</p>
+                    <div class="social">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="logo">
+          <a href="https://redrum.github.io"><img src="\media\images\custom-footerLogo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 6 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    
+    <div class="clear"></div>
+
+        
+
+      
+    <script src="https://redrum.github.io/media/js/functions-post.js"></script>
+
+    </div>
+    <!-- end: #wrapper -->
+  </body>
+</html>

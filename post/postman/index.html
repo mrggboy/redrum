@@ -1,0 +1,391 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Postman | Redrum</title>
+<meta name="description" content="菜就多练" />
+<link rel="shortcut icon" href="https://redrum.github.io/favicon.ico">
+<link rel="stylesheet" href="https://redrum.github.io/styles/main.css">
+
+<script src="https://redrum.github.io/media/js/jquery.min.js"></script>
+<script src="https://redrum.github.io/media/js/masonry.pkgd.min.js"></script>
+<script src="https://redrum.github.io/media/js/aos.js"></script>
+<script src="https://redrum.github.io/media/js/pace.min.js"></script>
+<script src="https://redrum.github.io/media/js/view-image.min.js"></script>
+<script src="https://redrum.github.io/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://redrum.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="一、postman基础功能
+0.功能概述
+
+1.常见类型的接口请求
+常见的接口有如下四种类型，分别是含有查询参数的接口，表单类型的接口，json类型的接口以及含有上传文件的接口，以下就对这四种类型接口及如何在postman中请求进行说明 。..." />
+    <meta name="keywords" content="study" />
+    <script src="https://redrum.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://redrum.github.io/media/js/prism.min.js"></script>
+  </head>
+  <body>
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://redrum.github.io"><img src="\media\images\custom-headerLogo.png" alt=""></a>
+            </div>
+            <!-- start: .main-nav -->
+
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                <li class=""><a href="https://redrum.github.io" class="menu">首页</a></li>
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
+              </ul>
+            </nav>
+            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
+        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
+          <div class="search-wrapper section">
+            <form id="gridea-search-form" data-update="1706061688140" action="/search/index.html" class="search-form" _lpchecked="1">
+              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
+              <button type="submit" class="submit" aria-label="Submit">
+                <i class="fa fa-search-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://redrum.github.io/post-images/postman.jpeg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2024-01-19"><i class="fa fa-calendar"></i><span class="lately">5 天前</span></time>
+              
+              <a href="https://redrum.github.io/post/postman/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/postman/"> </span>
+              </a>
+              <span id="/postman/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://redrum.github.io/tag/WhKNgZ_FS/" class="ctag ctag-0 ctag-WhKNgZ_FS" aria-label="">study</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">Postman</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <h1 id="一-postman基础功能">一、postman基础功能</h1>
+<h2 id="0功能概述">0.功能概述</h2>
+<figure data-type="image" tabindex="1"><img src="https://redrum.github.io/post-images/1705654255584.jpg" alt="" loading="lazy"></figure>
+<h2 id="1常见类型的接口请求">1.常见类型的接口请求</h2>
+<p>常见的接口有如下四种类型，分别是含有查询参数的接口，表单类型的接口，json类型的接口以及含有上传文件的接口，以下就对这四种类型接口及如何在postman中请求进行说明 。</p>
+<h3 id="11查询参数的接口请求">1.1查询参数的接口请求</h3>
+<p><strong>什么是查询参数?</strong><br>
+所谓的查询参数，其实就是URL地址中问号（?）后面的部分就叫查询参数，比如：<a href="http://cx.shouji.360.cn/phonearea.php?number=13012345678"></a>。在这个接口中，查询参数就是:number=13012345678 。而这一部分是由有键值对组成，格式为：key1=value1&amp;key2=value2, 如果有多组键值对，要用&amp;隔开 。</p>
+<p><strong>postman如何请求?</strong><br>
+在postman中实现对这类接口请求非常简单，一般就需要明确俩个参数即可，一个是请求方法，一个请求地址。<br>
+针对上面的那个接口，地址已经给出 ，而它的请求方法是get 。那么在postman中只需要把这俩个参数填写上即可请求 。</p>
+<p><strong>具体实现步骤：</strong></p>
+<ol>
+<li>
+<p>打开postman，新建一个请求。</p>
+</li>
+<li>
+<p>在请求方法中选择请求方法：GET,因为在postman中默认的请求方法就是GET,所以这一步可以忽略</p>
+</li>
+<li>
+<p>接口URL中输入地址，点击Send按钮就可以发送请求了 。</p>
+</li>
+</ol>
+<h3 id="12-表单类型的接口请求">1.2 表单类型的接口请求</h3>
+<p><strong>什么是表单 ？</strong></p>
+<p>我们都知道，在发送HTTP请求的时候，一个请求中一般包含三个部分，分别是请求行，请求头，请求体 。</p>
+<p>不同的接口，请求体的数据类型是不一样的，比较常见的一种就是表单类型，那么什么是表单类型呢 ？简单理解就是在请求头中查看Content-Type，它的值如果是:application/x-www-form-urlencoded .那么就说明客户端提交的数据是以表单形式提交的 。</p>
+<p><strong>postman中如何请求？</strong><br>
+<img src="https://redrum.github.io/post-images/1705655017930.png" alt="" loading="lazy"><br>
+如果在postman请求上图的接口，我们只需要填写四个参数，分别是(可以参考上图)：</p>
+<p>请求方法：POST<br>
+请求URL：http://localhost/index.php?m=Home&amp;c=User&amp;a=do_login&amp;t=0.21942974229794432<br>
+请求头：Content-Type：application/x-www-form-urlencode<br>
+请求体：username=13088888888&amp;password=123456&amp;verify_code=8888</p>
+<p><strong>实现步骤：</strong></p>
+<p>打开postman，新建一个请求 。<br>
+在请求中设置以上四个参数，点击Send按钮。在postman中设置请求体类型为，需要选择body-&gt; x-www-form-urlencoded<br>
+查看响应数据。</p>
+<h3 id="13-上传文件的表单请求">1.3 上传文件的表单请求</h3>
+<p>在做接口测试时，我们经常会遇到需要上传文件的接口，比如微信的更新头像。这就需要用到：multipart/form-data。它也属于一种表单，但它既支持表单请求，也支持文件上传。它的请求报文中数据往往是下面这样的。</p>
+<blockquote>
+<p>POST http://localhost/index.php/home/Uploadify/imageUp/savepath/head_pic/pictitle/banner/dir/images.html HTTP/1.1<br>
+Content-Type: multipart/form-data<br>
+file=a1.jpg</p>
+</blockquote>
+<p><strong>我们先分析需要填写的参数 ：</strong></p>
+<p>请求方法：POST<br>
+请求URL：http://localhost/index.php/home/Uploadify/imageUp/savepath/head_pic/pictitle/banner/dir/images.html<br>
+请求类型：multipart/form-data<br>
+请求体：file=a1.jpg</p>
+<p><strong>实现步骤：</strong></p>
+<p>打开postman，新建一个请求 。<br>
+在请求中设置以上四个参数，点击Send按钮。注意：在postman中设置请求体类型，需要选择body-&gt; form-data 。file中要选择File类型，然后上传本地的文件 。<br>
+查看响应数据。<br>
+<img src="https://redrum.github.io/post-images/1705655713740.png" alt="" loading="lazy"></p>
+<h3 id="14-json类型的接口请求">1.4 json类型的接口请求</h3>
+<p>这应该是接口测试中最常见的一种情况了 ， 也就是请求体类型为json,我们来看下这个请求报文 。</p>
+<blockquote>
+<p>POST http://xxx/api/sys/login HTTP/1.1<br>
+Content-Type: application/json;charset=UTF-8<br>
+{&quot;account&quot;:&quot;root&quot;,&quot;password&quot;:&quot;123456&quot;}</p>
+</blockquote>
+<p>根据以上报文，我们可以分析出，我们在postman只需要填写四个参数即可，具体如下：</p>
+<p>请求方法：POST<br>
+请求地址：http://xxx/api/sys/login<br>
+请求体类型：json<br>
+请求体数据：{&quot;account&quot;:&quot;root&quot;,&quot;password&quot;:&quot;123456&quot;}</p>
+<p><strong>实现步骤：</strong></p>
+<p>打开postman，新建一个请求 。<br>
+在请求中设置以上四个参数，点击Send按钮。注意：在postman中设置请求体类型，需要选择body-&gt; raw -JSON<br>
+查看响应数据。<br>
+<img src="https://redrum.github.io/post-images/1705656099614.png" alt="" loading="lazy"></p>
+<h2 id="2接口响应数据解析">2.接口响应数据解析</h2>
+<p>响应数据是发送请求后经过服务器处理后返回的结果，响应由三部分组成，分别是状态行、响应头、响应体。我们来看下postman的响应数据展示。<br>
+<img src="https://redrum.github.io/post-images/1705656257587.png" alt="" loading="lazy"></p>
+<p><strong>那么这些数据对我们做接口测试有什么作用呢 ？</strong></p>
+<p>Body和Status是我们做接口测试的重点，一般来说我们都会验证响应体中的数据和响应状态码<br>
+Test Results 是我们编写断言后，可以查看断言的执行结果 ，所以这个对我们也很有用 。<br>
+Time 和Size 是我们做性能测试时，可以根据这两个参数来对所测接口的性能做一个简单的判断。</p>
+<p><strong>Body</strong></p>
+<p>Body中的几个显示主题，分别是：Pretty，Raw，Preview .</p>
+<p>Pretty：翻译成中文就是漂亮 ， 也就是说返回的Body数据在这个标签中查看 ，都是经过格式化的，格式化后的数据看起来更加直观，所以postman默认展示的也是这个选项。比如返回html页面，它会经过格式化成HTML格式后展示，比如返回json，那么也会格式化成json格式展示 。</p>
+<p>Raw：翻译成中文未经过加工的，也就是原始数据 ，原始数据一般都是本文格式的，未经过格式化处理的，一般在抓包工具中都有这个选项 。</p>
+<p>Preview：翻译成中文就是预览，这个选项一般对返回HTML的页面效果特别明显，如请求百度后返回结果，点击这个选项后就直接能查看到的页面 ，如下图 。同时这个选项和浏览器抓包中的Preview也是一样的。</p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://redrum.github.io/post-images/json.png');"></div>
+                 <a href="https://redrum.github.io/post/json/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2024-01-23">2024-01-23</time>
+                  <h4 class="title white no-margin">JSON</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://redrum.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://redrum.github.io/post-images/servlet.png');"></div>
+                 <a href="https://redrum.github.io/post/servlet/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2024-01-18">2024-01-18</time>
+                  <h4 class="title white no-margin">Servlet</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://redrum.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+              </div>
+              <div class="clear"></div>
+            
+
+            </div>
+          </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://redrum.github.io/post/json/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://redrum.github.io/post-images/json.png');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2024-01-23">2024-01-23</time>
+                      <h4 class="title usmall">
+                        <a href="https://redrum.github.io/post/json/">JSON</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://redrum.github.io/post/postman/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://redrum.github.io/post-images/postman.jpeg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2024-01-19">2024-01-19</time>
+                      <h4 class="title usmall">
+                        <a href="https://redrum.github.io/post/postman/">Postman</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://redrum.github.io/post/servlet/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://redrum.github.io/post-images/servlet.png');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2024-01-18">2024-01-18</time>
+                      <h4 class="title usmall">
+                        <a href="https://redrum.github.io/post/servlet/">Servlet</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://redrum.github.io/tag/WhKNgZ_FS/" class="ctag ctag-0 ctag-WhKNgZ_FS" aria-label="">study</a>
+                    
+                      <a href="https://redrum.github.io/tag/0c-nXbqnA/" class="ctag ctag-1 ctag-0c-nXbqnA" aria-label="">Gridea</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://redrum.github.io/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Redrum</a></h4>
+                    <p class="founder">菜就多练</p>
+                    <div class="social">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="logo">
+          <a href="https://redrum.github.io"><img src="\media\images\custom-footerLogo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 6 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    
+    <div class="clear"></div>
+
+        
+
+      
+    <script src="https://redrum.github.io/media/js/functions-post.js"></script>
+
+    </div>
+    <!-- end: #wrapper -->
+  </body>
+</html>
